@@ -10,8 +10,7 @@ class Rfid_rc522:
             (status,uid) = MIFAREReader.MFRC522_Anticoll()
             
             if status == MIFAREReader.MI_OK:
-                return "%s%s%s%s" % (hex(uid[0]).upper()[2:], hex(uid[1]).upper()[2:], 
-                                     hex(uid[2]).upper()[2:], hex(uid[3]).upper()[2:])
+                return "%s%s%s%s" % (hex(uid[0]).upper()[2:], hex(uid[1]).upper()[2:], hex(uid[2]).upper()[2:], hex(uid[3]).upper()[2:])
 
 if __name__ == "__main__":
     print('Enter your University card')
