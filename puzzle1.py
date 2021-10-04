@@ -14,5 +14,6 @@ class Rfid_rc522:
                                      hex(uid[2]).upper()[2:], hex(uid[3]).upper()[2:])
 
 if __name__ == "__main__":
+    print('Enter your University card')
     uid = Rfid_rc522().read_uid()
-    print(uid)
+    print('Welcome', uid)
