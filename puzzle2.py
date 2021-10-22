@@ -1,8 +1,6 @@
 from gi.repository import Gtk, Gdk
 import RPi.GPIO as GPIO
-import puzzle1
-import widgets
-import gi, threading
+import puzzle1, gi, threading
 GPIO.setwarnings(False)
 
 class MyWindow(Gtk.Window):
