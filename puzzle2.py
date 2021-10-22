@@ -49,7 +49,6 @@ class MyWindow(Gtk.Window):
         self.box.set_name("box2")
         self.label.set_label('UID: '+uid)
         
-        
 if __name__ == "__main__":
     win = MyWindow()
     win.connect("destroy", Gtk.main_quit)
