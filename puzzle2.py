@@ -31,7 +31,6 @@ class MyWindow(Gtk.Window):
         self.button = Gtk.Button(label="Clear")
         self.button.connect("clicked", self.clicked)
         
-        
         self.box.pack_start(self.evbox, True, True, 0)
         self.box.pack_start(self.button, True, True, 0)
         
