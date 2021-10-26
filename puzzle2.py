@@ -34,6 +34,8 @@ class MyWindow(Gtk.Window):
         self.box.pack_start(self.evbox, True, True, 0)
         self.box.pack_start(self.button, True, True, 0)
         
+        self.button.set_sensitive(False)
+        
         thread = threading.Thread(target=self.read_uid)
         thread.setDaemon(True)
         thread.start()
@@ -48,6 +50,7 @@ class MyWindow(Gtk.Window):
         uid = puzzle1.Rfid_rc522().read_uid()
         self.box.set_name("box2")
         self.label.set_label('UID: '+uid)
+        self.button.set_sensitive(True)
         
 if __name__ == "__main__":
     win = MyWindow()
