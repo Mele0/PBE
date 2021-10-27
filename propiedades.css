@@ -1,0 +1,27 @@
+button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border-radius: 15px;
+}
+box{
+	background-color:red;
+	padding: 25px;
+}
+box#box2{
+	background-color:red;
+	padding: 25px;
+}
+label{
+	margin-bottom: 5px;
+	font-size: 25px;
+	color: white;
+	border-radius: 10px;
+}
+
+clicked{
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+	font-size: 25px;
+}
